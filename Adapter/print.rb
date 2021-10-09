@@ -1,9 +1,5 @@
-module Print
-  def print_weak
-    raise NotImplementedError, "Method \"#{__method__}\" is not implemented in class \"#{self.class.name}\"."
-  end
+load '../utils/necessary_to_override.rb'
 
-  def print_strong
-    raise NotImplementedError, "Method \"#{__method__}\" is not implemented in class \"#{self.class.name}\"."
-  end
+module Print
+  necessary_to_override :print_weak, :print_strong
 end

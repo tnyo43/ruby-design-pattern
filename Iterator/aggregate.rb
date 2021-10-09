@@ -1,5 +1,5 @@
+load '../utils/necessary_to_override.rb'
+
 module Aggregate
-  def iterator
-    raise NotImplementedError, "Method \"#{__method__}\" is not implemented in class \"#{self.class.name}\"."
-  end
+  necessary_to_override :iterator
 end
